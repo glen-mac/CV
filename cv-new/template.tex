@@ -1,0 +1,175 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{~~Info Sec.~~},
+        \textbf{Vuln.}\\\textbf{Research},
+        \textbf{Reverse}\\\textbf{Engineering},
+        \textbf{Web}\\\textbf{Pentesting},
+        \textbf{Binary}\\\textbf{Exploitation},
+        \textbf{~~Fuzzing~~},
+        \textbf{Embedded}\\\textbf{Hardware}
+    }
+}
+
+% Programming skill bars
+\programming{{C $\textbullet$ Python $\textbullet$ Java / 5}, {C++ $\textbullet$ Ruby $\textbullet$ x86 ASM / 3}}
+
+% Projects text
+\projects{
+\textbf{COMP3891} - Built VFS, Syscalls and Virtual Memory management ontop of a MIPS based Unix. \\
+        \textbf{COMP9242} - Built an entire Simple Operating System (SOS) ontop of the seL4 microkernel - including NFS, Syscalls, VM system, Drivers.
+}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{GLENN MCGUIRE} % Your name
+\cvjobtitle{ Security Student } % Job
+% title/career
+
+\cvlinkedin{/in/glenmac}
+\cvgithub{glen-mac}
+\cvnumberphone{(+61) 457 321 754} % Phone number
+\cvsite{glennmcgui.re} % Personal website
+\cvmail{glenn.mcguire@me.com} % Email address
+\cvbugcrowd{glem} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{2014 - 2018}
+        {}
+        {BEng., Computer Engineering \textnormal{(WAM: 92.3)}}
+        {\href{http://www.unsw.edu.au/}{University of NSW, Sydney}}
+        {}
+        {}
+	\twentyitem
+    	{2009 - 2013}
+		{}
+        {QSA High School Certificate \textnormal{(OP: 1)}}
+        {\href{http://www.unipune.ac.in/}{Toowoomba State High School}}
+        {}
+        {Highest Academic Achievment (DUX)}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty} \vspace{5mm}
+
+\section{Research}
+\begin{twenty}
+	\twentyitem
+    	{2015}
+		{}
+        {Undergraduate Research Assistant}
+        {\href{http://www.uoguelph.ca/}{University of NSW}}
+        {}
+        {
+        {\begin{itemize}
+        \item Worked with \textbf{Valeri Ougrinovski} understanding the viability of various Chaotic Encryption techniques in the context of Industrial Control Systems. 
+		\end{itemize}}
+        }
+\end{twenty} \vspace{5mm}
+
+
+\section{Awards}
+\begin{tabular}{l@{\hskip 0.6in}r@{\hskip 0.7in}r}
+2017 & UNSW & Computing Faculty Deans List \\
+2017 & Deloitte & TOP100 Software Engineering finalist \\
+2016 & ASD & Offered a Position in the ASD Cadetship Program \\
+2016 & IBM &  Offered ACS Foundation Trust Fund Scholarship \\
+2016 & UNSW & First Place in UNSW Autumn Security CTF \\
+2016 & UNSW & Offered CO-OP Scholarship From Faculty of CSE\\
+2014 & UNSW & School of Mathematical Sciences Commendation\\
+2014 & RAAF & Military Commandant's Commendation\\
+2014 & UNSW & Highest Academic Achievement in First Year BE. EE\\
+2014 & UNSW & Offered Scientia Scholarship\\
+2014 & UNSW & Offered Position In Chief of Defence Force Program\\
+2013	& TSHS & Overall Position (OP 1) Leaving Mark\\
+2013 & TSHS & Highest Academic Achievement (Year 12)\\
+2012 & TSHS & Highest Academic Achievement (Year 11)\\
+\end{tabular} \vspace{5mm}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{Nov 2016 -}
+		{Mar 2017}
+        {Security Engineer}
+        {\href{http://www.freelancer.com/}{Freelancer}}
+        {}
+        {\begin{itemize}
+\item Internal penetration testing of Freelancer.com acquisitions.
+\item Development of internal tools.
+\item Software development and security patches on Freelancer.com
+        \end{itemize}}
+        \\
+	\twentyitem
+    	{Nov 2015 -}
+		{Current}
+        {Software Developer and Director}
+        {\href{http://audaciousdigital.com.au/}{Audacious Digital}}
+        {}
+        {
+        {\begin{itemize}
+\item Currently develop websites and webapps for clients on a contract basis.
+\item Currently develop both iOS and Android mobile applications for clients.
+\item A platform `OurVillage' won Toowoomba Startup Weekend 2015 and selected as a startup for the Rise Conference in Hong Kong, June 2016.
+    \end{itemize}}
+        }
+    \\   
+    \twentyitem
+   		{Jan 2014 -}
+		{Apr 2015}
+        {Electrical Engineering Officer}
+        {\href{http://www.airforce.gov.au}{Royal Australian Air Force (RAAF)}}
+        {}
+        {
+        {\begin{itemize}
+\item Developed a small scale digital purchase system for entire undergraduate body of the academy.
+\item Contributed in the implementation and maintenance of the Academy intranet web system for information and data distribution.
+    \end{itemize}}
+        }
+     \\    
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\end{document} 
